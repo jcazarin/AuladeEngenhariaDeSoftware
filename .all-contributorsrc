@@ -1,1 +1,14 @@
 
+{
+  "projectName": "Engenharia de Software",
+  "projectOwner": "bruguioti",
+  "repoType": "github",
+  "repoHost": "[https://github.com](https://github.com)",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributorsPerLine": 7,
+  "contributors": []
+}
