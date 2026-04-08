@@ -1,17 +1,16 @@
+```mermaid
 flowchart TD
     start((Inicio)) --> receber[Receber Pedido]
 
     receber --> fork{Fork}
 
-    %% Fluxo principal
+    %% Fluxo de Entrega
     fork --> preencher[Preencher Pedido]
-
-    %% Decisão
     preencher --> decisao{Tipo de Entrega}
-    decisao -->|Rapida| entrega_rapida[Entrega Rapida]
-    decisao -->|Normal| entrega_normal[Entrega Normal]
+    
+    decisao -- Rapida --> entrega_rapida[Entrega Rapida]
+    decisao -- Normal --> entrega_normal[Entrega Normal]
 
-    %% União (merge)
     entrega_rapida --> uniao{Uniao}
     entrega_normal --> uniao
 
